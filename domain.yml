@@ -1,0 +1,59 @@
+-version: "2.0"
+
+intents:
+  - greet
+  - bot_challenge
+  - goodbye
+  - request_names
+  - search
+
+actions:
+  - action_football_score
+  - utter_greet
+  - utter_searchresult
+  - utter_goodbye
+  - utter_iamabot
+  - utter_submit
+  - utter_slots_values
+
+
+forms:
+  name_form:
+    first_name:
+      - type: from_text
+    last_name:
+      - type: from_text
+
+slots:
+  first_name:
+    type: text
+  last_name:
+    type: text
+
+responses:
+
+  utter_searchresult:
+    - text: "{temp}"
+
+  utter_greet:
+    - text: "Hey! How may i help you?"
+
+  utter_goodbye:
+    - text: "Hopefully i was able to help you. Goodbye, until next time"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_ask_first_name:
+    - text: "Enter your first name and Last name."
+
+  utter_submit:
+    - text: "Done with the info!"
+
+  utter_slots_values:
+    - text: "Thanks for the name {first_name} {last_name}!"
+    - text: "May i know, how can i help you"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,99 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - sorry to disturb you
+    - is someone there?
+    - knock knock
+    - evening
+    - morning
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Thanks
+    - adigos amigos
+    - asta lavista
+    - ghane khamma
+    - Sayonara
+    - until next time
+    - ok
+    - takecare
+    - perfect
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a football bot?
+    - am i speaking to bot or human?
+    - can you guide me to a human
+
+- intent: search
+  examples: |
+    - football score
+    - Football results
+    - UEFA championship
+    - uefa euro scores
+    - euro cup
+    - international matches
+    - uefa matches
+    - Football news
+    - Last football results
+    - can you tell me results?
+    - can you tell me football scores?
+    - latest match results
+    - matches scheduled for today
+    - is football going on?
+    - are matches playes in corona
+    - who is playing football?
+    - competitive games
+    - European nations matches
+
+
+- intent: request_names
+  examples: |
+    - I want details
+    - are you football asssistant
+    - can you help me with news on football
+    - fixtures for today's match
+    - fixture
+    - schedule
+    - I was looking for football scores
+    - I was looking for soccer scores
+    - football info
+    - info on football
+    - info on football scores
+    - can you help me?
+    - looking for football scores
+    - are you the assistant
+    - is there a way to know the latest score
+    - score
+
+
